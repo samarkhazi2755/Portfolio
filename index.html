@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Samar Sania - BCA Student & Aspiring Software Developer">
+  <title>Samar Sania | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #4b5563 0%, #6b7280 100%); } /* grayish gradient */
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    .skill-tag { transition: all 0.3s ease; }
+    .skill-tag:hover { transform: scale(1.05); }
+    .fade-in { animation: fadeIn 0.8s ease-in; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .typing-animation { overflow: hidden; border-right: 3px solid #6b7280; white-space: nowrap; animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite; }
+    @keyframes typing { from { width: 0; } to { width: 100%; } }
+    @keyframes blink-caret { from, to { border-color: transparent; } 50% { border-color: #6b7280; } }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Hero Section -->
+  <header class="gradient-bg text-white min-h-screen flex items-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-black opacity-10"></div>
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="max-w-4xl mx-auto text-center fade-in">
+        <div class="mb-8">
+          <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-white bg-opacity-20 flex items-center justify-center text-6xl font-bold">
+            SS
+          </div>
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-4 typing-animation">Samar Sania</h1>
+        <p class="text-xl md:text-2xl mb-8 text-gray-100">BCA Student | Aspiring Software Developer | Full Stack Developer</p>
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <a href="tel:7619370701" class="bg-white bg-opacity-20 hover:bg-opacity-30 px-6 py-3 rounded-full transition-all duration-300 flex items-center gap-2">
+            <span class="text-2xl">📞</span> 7619370701
+          </a>
+          <a href="mailto:Samarkhazi275@gmail.com" class="bg-white bg-opacity-20 hover:bg-opacity-30 px-6 py-3 rounded-full transition-all duration-300 flex items-center gap-2">
+            <span class="text-2xl">📧</span> Email
+          </a>
+          <a href="https://linkedin.com/in/samar-sania" target="_blank" class="bg-white bg-opacity-20 hover:bg-opacity-30 px-6 py-3 rounded-full transition-all duration-300 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8 text-gray-800">Career Objective</h2>
+        <div class="bg-gray-100 p-8 rounded-2xl shadow-lg">
+          <p class="text-lg leading-relaxed text-gray-700">
+            Final year BCA student with a <span class="font-semibold text-gray-700">CGPA of 8.11</span>, skilled in programming, web development, and database management.
+            Seeking internship opportunities to apply technical expertise in building scalable applications and impactful projects that make a difference.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Education</h2>
+        <div class="bg-white rounded-2xl shadow-lg p-8 card-hover">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gray-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+              🎓
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-800">Bachelor of Computer Application</h3>
+              <p class="text-gray-600">Vidyavahini First Grade College, Tumkur</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="text-gray-600">2023 – 2026</span>
+            <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full font-semibold">CGPA: 8.11</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Technical Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="skill-tag bg-gray-500 text-white px-6 py-4 rounded-xl text-center font-semibold shadow-lg">☕ Java</div>
+          <div class="skill-tag bg-gray-500 text-white px-6 py-4 rounded-xl text-center font-semibold shadow-lg">🐍 Python</div>
+          <div class="skill-tag bg-gray-500 text-white px-6 py-4 rounded-xl text-center font-semibold shadow-lg"># C#</div>
+          <div class="skill-tag bg-gray-500 text-white px-6 py-4 rounded-xl text-center font-semibold shadow-lg">📜 JavaScript</div>
+          <div class="skill-tag bg-gray-500 text-white px-6 py-4 rounded-xl text-center font-semibold shadow-lg">🎨 HTML/CSS</div>
+          <div class="skill-tag bg-gray-500 text-white px-6 py-4 rounded-xl text-center font-semibold shadow-lg">🗄️ MySQL</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Featured Projects</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Expense Tracker -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+            <div class="bg-gray-400 h-2"></div>
+            <div class="p-8">
+              <div class="flex items-center mb-4">
+                <span class="text-3xl mr-3">💰</span>
+                <h3 class="text-2xl font-bold text-gray-800">Expense Tracker</h3>
+              </div>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                A lightweight and user-friendly web application designed to help users manage their daily expenses with intuitive tracking and categorization features.
+              </p>
+              <a href="https://expense-tracker-black-one.vercel.app/" target="_blank"
+                 class="inline-flex items-center bg-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition-all duration-300 font-semibold">
+                View Live Project
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Habit Tracker -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+            <div class="bg-gray-400 h-2"></div>
+            <div class="p-8">
+              <div class="flex items-center mb-4">
+                <span class="text-3xl mr-3">✅</span>
+                <h3 class="text-2xl font-bold text-gray-800">Habit Tracker</h3>
+              </div>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                A productivity tool that empowers individuals to build positive routines and maintain consistency with their personal and professional goals.
+              </p>
+              <a href="https://habit-tracker-lyart-one.vercel.app/" target="_blank"
+                 class="inline-flex items-center bg-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition-all duration-300 font-semibold">
+                View Live Project
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- MoodMenu -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+            <div class="bg-gray-400 h-2"></div>
+            <div class="p-8">
+              <div class="flex items-center mb-4">
+                <span class="text-3xl mr-3">🍲</span>
+                <h3 class="text-2xl font-bold text-gray-800">MoodMenu</h3>
+              </div>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                A mood-based recipe website that suggests meals according to your current mood, helping users explore creative and personalized recipes.
+              </p>
+              <a href="https://moodmenu-kappa.vercel.app/" target="_blank"
+                 class="inline-flex items-center bg-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition-all duration-300 font-semibold">
+                View Live Project
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Certifications</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gray-100 p-6 rounded-2xl text-center card-hover border border-gray-200">
+            <div class="text-4xl mb-4">🏢</div>
+            <h3 class="font-semibold text-gray-800">Infosys Springboard</h3>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-2xl text-center card-hover border border-gray-200">
+            <div class="text-4xl mb-4">🍃</div>
+            <h3 class="font-semibold text-gray-800">MongoDB</h3>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-2xl text-center card-hover border border-gray-200">
+            <div class="text-4xl mb-4">🌐</div>
+            <h3 class="font-semibold text-gray-800">Cisco</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6 text-center">
+      <div class="mb-6">
+        <h3 class="text-2xl font-bold mb-2">Let's Connect!</h3>
+        <p class="text-gray-400">Ready to collaborate on exciting projects</p>
+      </div>
+      <div class="flex justify-center gap-6 mb-8">
+        <a href="tel:7619370701" class="hover:text-gray-400 transition-colors duration-300">
+          <span class="text-2xl">📞</span>
+        </a>
+        <a href="mailto:Samarkhazi275@gmail.com" class="hover:text-gray-400 transition-colors duration-300">
+          <span class="text-2xl">📧</span>
+        </a>
+        <a href="https://linkedin.com/in/samar-sania" target="_blank" class="hover:text-gray-400 transition-colors duration-300">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.
