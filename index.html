@@ -752,6 +752,7 @@
         <div class="hbtns">
           <a href="#projects" class="btn-p">◈ View Projects</a>
           <a href="#contact"  class="btn-o">→ Contact Me</a>
+          <a href="Samar_Resume.pdf" download="Samar_Sania_Resume.pdf" class="btn-o">⬇ Resume</a>
         </div>
       </div>
 
@@ -800,7 +801,7 @@
         <div class="at-meta">
           <div class="am-item"><div class="am-lbl">Location</div><div class="am-val">Tumkur, Karnataka</div></div>
           <div class="am-item"><div class="am-lbl">Email</div><div class="am-val"><a href="mailto:Samarkhazi275@gmail.com">Samarkhazi275@gmail.com</a></div></div>
-          <div class="am-item"><div class="am-lbl">Graduation</div><div class="am-val">2026 — BCA</div></div>
+          <div class="am-item"><div class="am-lbl">Portfolio</div><div class="am-val"><a href="https://portfolio-1rcm.vercel.app/" target="_blank">portfolio-1rcm.vercel.app</a></div></div>
           <div class="am-item"><div class="am-lbl">LinkedIn</div><div class="am-val"><a href="https://linkedin.com/in/samar-sania" target="_blank">samar-sania</a></div></div>
         </div>
 
@@ -1018,10 +1019,18 @@
             <div class="clink-ico">⌥</div>
             <div><div class="clink-l">GitHub</div><div class="clink-v">github.com/samarkhazi2755</div></div>
           </a>
+          <a href="https://portfolio-1rcm.vercel.app/" target="_blank" class="clink">
+            <div class="clink-ico">🌐</div>
+            <div><div class="clink-l">Portfolio</div><div class="clink-v">portfolio-1rcm.vercel.app</div></div>
+          </a>
           <div class="clink">
             <div class="clink-ico">📍</div>
             <div><div class="clink-l">Location</div><div class="clink-v">Tumkur, Karnataka, India</div></div>
           </div>
+          <a href="tel:+918951877691" class="clink">
+            <div class="clink-ico">📞</div>
+            <div><div class="clink-l">Phone</div><div class="clink-v">+91 89518 77691</div></div>
+          </a>
         </div>
       </div>
 
@@ -1225,9 +1234,10 @@ document.getElementById('cform').addEventListener('submit',e=>{
 
 /* ── DOWNLOAD RESUME ── */
 document.getElementById('dlbtn').addEventListener('click',()=>{
-  // Replace with your actual PDF link:
-  // window.open('YOUR_RESUME_PDF_URL', '_blank');
-  alert('Add your resume PDF URL in the script to enable download.');
+  const a = document.createElement('a');
+  a.href = 'Samar_Resume.pdf';
+  a.download = 'Samar_Sania_Resume.pdf';
+  a.click();
 });
 </script>
 </body>
