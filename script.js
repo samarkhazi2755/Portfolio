@@ -1,39 +1,8 @@
 window.addEventListener("load", () => {
+    // Removed intro animation code
 
-    const animations = [
-        { selector: ".top-tags", class: "from-top", delay: 0 },
-        { selector: ".left h1", class: "from-left", delay: 0.3 },
-        { selector: ".desc", class: "from-left", delay: 0.6 },
-        { selector: ".live-line", class: "from-bottom", delay: 0.9 },
-        { selector: ".buttons", class: "zoom-in", delay: 1.2 },
-        { selector: ".site-link", class: "from-bottom", delay: 1.5 },
-        { selector: ".right", class: "from-right", delay: 0.6 },
-        { selector: ".stats", class: "from-bottom", delay: 1.8 },
-    ];
-
-    animations.forEach(item => {
-        const el = document.querySelector(item.selector);
-        if (el) {
-            el.style.animationDelay = `${item.delay}s`;
-            el.classList.add(item.class);
-        }
-    });
-
-    // ===== HIDE INTRO =====
-    setTimeout(() => {
-        const intro = document.getElementById("intro");
-        const site = document.getElementById("real-site");
-
-        intro.classList.add("smooth-out");
-
-        setTimeout(() => {
-            intro.style.display = "none";
-            site.style.display = "block";
-            initScrollAnimations(); 
-        }, 1200);
-    }, 3800);
+    initScrollAnimations(); 
 });
-
 
 // ===============================
 // SCROLL REVEAL (SECTIONS)
@@ -59,9 +28,9 @@ function initScrollAnimations() {
     elements.forEach(el => observer.observe(el));
 }
 
-
 // ===============================
-
+// Active Navigation on Scroll
+// ===============================
 const sections = document.querySelectorAll("section");
 const navItems = document.querySelectorAll(".ul-list li");
 
@@ -87,7 +56,7 @@ window.addEventListener("scroll", () => {
     });
 });
 
-// ===============================
+// Smooth Scroll for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
         e.preventDefault();
